@@ -16,10 +16,36 @@ public class MainActivity extends AppCompatActivity
         findViewById(R.id.flashcardQuestion).setOnClickListener(new View.OnClickListener()
         {
             @Override
+                    public void onClick(View v)
+                    {
+                        if(findViewById(R.id.flashcardQuestion).getVisibility() == View.VISIBLE)
+                        {
+                            findViewById(R.id.flashcardQuestion).setVisibility(View.INVISIBLE);
+                            findViewById(R.id.flashcardAnswer).setVisibility(View.VISIBLE);
+                        }
+                        else
+                        {
+                            findViewById(R.id.flashcardQuestion).setVisibility(View.VISIBLE);
+                            findViewById(R.id.flashcardAnswer).setVisibility(View.INVISIBLE);
+                        }
+                    }
+        });
+
+        findViewById(R.id.flashcardAnswer).setOnClickListener(new View.OnClickListener()
+        {
+            @Override
             public void onClick(View v)
             {
-                findViewById(R.id.flashcardAnswer).setVisibility(View.VISIBLE);
-                findViewById(R.id.flashcardQuestion).setVisibility(View.INVISIBLE);
+                if(findViewById(R.id.flashcardAnswer).getVisibility() == View.VISIBLE)
+                {
+                    findViewById(R.id.flashcardQuestion).setVisibility(View.INVISIBLE);
+                    findViewById(R.id.flashcardAnswer).setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    findViewById(R.id.flashcardQuestion).setVisibility(View.VISIBLE);
+                    findViewById(R.id.flashcardAnswer).setVisibility(View.INVISIBLE);
+                }
             }
         });
     }
