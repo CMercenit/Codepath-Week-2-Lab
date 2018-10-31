@@ -1,9 +1,11 @@
 ## Lab 2
 
 ### App Description
-`TODO://` Add app description
+- Flips from question to answer.
+- Allows the user to create a new flashcard, then displays it.
 
 ### App Walk-though
+![](AppRecording3.gif)
 
 ## Required
 - [x] User can click on a ‘+’ button that takes the user to new ‘Add Card Screen’
