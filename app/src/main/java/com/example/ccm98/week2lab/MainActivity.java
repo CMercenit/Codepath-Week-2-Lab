@@ -42,13 +42,27 @@ public class MainActivity extends AppCompatActivity
                 MainActivity.this.startActivityForResult(intent, 1);
             }
         });
+
+        findViewById(R.id.editButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AddCardActivity.class);
+                String string1 = ((TextView)findViewById(R.id.flashcardQuestion)).getText().toString();
+                String string2 = ((TextView)findViewById(R.id.flashcardAnswer)).getText().toString();
+                intent.putExtra("string1", string1);
+                intent.putExtra("string2", string2);
+                MainActivity.this.startActivityForResult(intent, 2);
+            }
+        });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
-        if(requestCode == 1 && resultCode == RESULT_OK)
+        if(resultCode == RESULT_OK)
         {
+            //Snackbar.make(parentView, R.string.snackbar_text, Snackbar.LENGTH_SHORT);
+
             String string1 = data.getExtras().getString("string1");
             String string2 = data.getExtras().getString("string2");
 
