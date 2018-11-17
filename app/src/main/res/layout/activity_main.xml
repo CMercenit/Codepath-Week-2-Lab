@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:lineSpacingExtra="5sp"
-        android:text="How many licks does it take to get to the center of a Tootsie Pop?"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="40sp"
@@ -27,7 +26,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp"
         android:lineSpacingExtra="5sp"
-        android:text="The world may never know."
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="40sp"
@@ -58,6 +56,28 @@
         android:layout_alignTop="@+id/plusButton"
         android:layout_marginStart="15dp"
         android:src="@drawable/edit"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/plusButton"
+        android:layout_centerVertical="true"
+        android:src="@drawable/next"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <ImageView
+        android:id="@+id/deleteDataButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/editButton"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_iconmonstr_eraser_2"
         android:visibility="visible"
         tools:layout_editor_absoluteX="318dp"
         tools:layout_editor_absoluteY="501dp" />
