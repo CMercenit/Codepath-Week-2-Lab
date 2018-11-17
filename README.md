@@ -6,7 +6,7 @@
 - The entire list of stored flashcards can be flipped through.
 
 ### App Walk-though
-
+![](AppRecording4.gif)
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
